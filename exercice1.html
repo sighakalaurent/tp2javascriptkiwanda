@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculate</title>
+
+    <script>
+        function calculate() {
+            let chainevalue = document.formulaire.valuestring.value;
+            let convertstring = eval(chainevalue);
+            document.formulaire.stringconvertie.value = convertstring;
+            console.log(chainevalue)
+            console.log(typeof (chainevalue))
+            console.log(typeof (convertstring))
+            console.log(convertstring)
+           
+        }
+
+    </script>
+</head>
+
+<body>
+    <form name="formulaire">
+        <input type="text" name="valuestring">
+        <input type="button" onclick="calculate()" value="=">
+        <input type="number" name="stringconvertie"><br>
+        <a href="#" onclick="calculate()">voir</a>
+    </form>
+
+
+</body>
+
+</html>
